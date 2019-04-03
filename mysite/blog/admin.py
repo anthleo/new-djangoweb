@@ -9,5 +9,5 @@ class BlogTypeAdmin(admin.ModelAdmin):
 @admin.register(Blog)
 class BlogAdmin(admin.ModelAdmin):
     list_display = ('title','blog_type','author','is_deleted','create_time','last_updated_time')
-    search_fields = ('title',)
+    #search_fields = ('title',)
     list_filter = ('create_time',)
